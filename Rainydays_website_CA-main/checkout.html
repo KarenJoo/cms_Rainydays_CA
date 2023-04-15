@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The checkout page of Rainydays" />
+    <link href="/css/index.css" rel="stylesheet" />
+
+    <title>Rainydays | Checkout</title>
+    <!-- Hotjar Tracking Code for my site -->
+    <script>
+      (function (h, o, t, j, a, r) {
+        h.hj =
+          h.hj ||
+          function () {
+            (h.hj.q = h.hj.q || []).push(arguments);
+          };
+        h._hjSettings = { hjid: 3395081, hjsv: 6 };
+        a = o.getElementsByTagName("head")[0];
+        r = o.createElement("script");
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+      })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
+    </script>    
+    <script defer src="js/checkout.js"></script>
+  </head>
+  <body>
+    <header class="header-container big-header">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="burger-icon">
+        <img src="../icons/burgermenu.svg" alt="burger-icon" />
+      </label>
+     <a href="../index.html" class="logo cursor-on big-logo small-logo"
+        ><img src="../icons/RainyDays_logo1.png" alt="image of the logo"
+      /></a>
+      <nav class="nav-small">
+        <a href="../men.html">MEN</a>
+        <a href="../women.html">WOMEN</a>
+        <a href="../alljackets.html">VIEW ALL</a>
+        <a href="../aboutus.html">about us</a>
+        <a href="../contact.html">contact</a>
+        <a href="../shoppingcart.html" ">
+          <img src="../icons/shopping-bag(1).png" class="shopping-icon" alt="shopping bag icon"></a>
+      </nav> 
+      <div id="mobile-cart-icon" class="cart-icon-none"> 
+        <a href="../shoppingcart.html" ">
+          <img src="../icons/shopping-bag(1).png" class="shopping-icon-mobile" alt="shopping bag icon"></a>
+        </div>  
+    </header>
+    <main>
+      <div class="nav-icon-2 big-nav-icon-2"></div>
+      <div class="checkout-header checkout-header-small">
+        <h1>Order summary</h1>
+      
+      <section class="checkout-container">
+        <img
+          src="/images/RainyDays_1jacket.jpg"
+          alt="Triclimate Waterproof Jacket"
+        />
+        <h4>Triclimate Waterproof Jacket</h4>
+        <h3>358,98 EUR</h3>
+      </section>
+
+    <!-- payment form -->
+      <form id="paymentForm" class="checkout-form checkout-form-big checkout-form-small">
+        <div class="payment-title">
+          <h3>Please enter your card information here</h3>
+        </div>
+
+
+          <!-- firstname -->    
+          <div>
+        <label for="firstname">First name*
+        <input 
+          name="paymentFirstName"
+          id="paymentFirstName"
+          placeholder="First name"
+        /></label>
+        <div class="payment-success" id="payFirstNameSuccess"></div>
+        <div class="payment-error" id="payFirstNameError">
+        <p>Please enter a valid first name</p>
+      </div>
+    </div> 
+
+        <!-- lastname-->
+        <div>
+        <label>Last name*
+        <input
+          name="paymentLastName"
+          id="paymentLastName"
+          placeholder="Last name"
+         
+        /></label>
+        <div class="payment-success" id="payLastNameSuccess"></div>
+        <div class="payment-error" id="payLastNameError">
+        <p>Please enter a valid last name</p>
+      </div>
+    </div>
+
+    <!-- card number -->
+    <div class="pay-card">
+      <label>Card number*
+        <input 
+        name="paymentCard"
+        id="paymentCard"
+        placeholder="e.g 1234 1234 1234 1234"
+        /></label>
+        <div class="payment-success" id="cardSuccess"></div>
+        <div class="payment-error" id="cardError">
+        <p>Please insert right card numbers</p>
+    </div>
+
+         <!-- cvc -->
+         <div class="cvc-exp small-cvc-exp">
+          <div>
+         <label>CVC*
+         <input
+           name="paymentCvc"
+           id="paymentCvc"
+           placeholder="123"
+          /></label>
+         <div class="payment-success" id="cvcSuccess"></div>
+        <div class="payment-error" id="cvcError">
+        <p>cvc must be three numbers</p>
+        </div>
+      </div>
+      
+
+          <!-- exp -->
+          <div>
+        <label>Expiration date*
+        <input
+          name="paymentExp"
+          id="paymentExp"
+          placeholder="00/00" 
+         /></label>
+        <div class="payment-success" id="expSuccess"></div>
+        <div class="payment-error" id="expError">
+        <p>Expiration date has to be valid</p>
+      </div>
+    </div>
+</div>
+          <!-- card option -->
+          <div>
+          <select name="pay-option" id="payment-option" class="checkout-phurcase small-checkout-info">
+            <option value="pay-option-one">Visa Card</option>
+            <option value="pay-option-two">Master Card</option>
+            <option value="pay-option-three">Paypal</option>
+          </select> 
+          <div class="complete-cta-container small-comp-cta">
+     <a href="../checkout-success.html"><button type="submit" class="cta complete-cta">
+      complete order</a
+      ></button>
+      </div>
+    </div>
+  </div>
+      </form>
+
+  
+    </main>
+    <footer class="main-footer small-footer">
+      <div class="footer-one small-footer-one">
+        <h4>Contact us</h4>
+        <p>Olav Tryggvassons gt 50</p>
+        <p>7011 Trondheim</p>        
+        <p>rainydays@company.com </p>
+        <p>+47 999 999 99</p>        
+        <p>Mon-Fri: 10:00am - 7:00pm</p>
+      </div>
+      
+
+      <div class="footer-two small-footer-one">
+        <h4>Rainydays</h4>
+        <a href="../men.html">Men's jackets</a>
+        <a href="../women.html">Women's jackets</a>
+        <a href="../alljackets.html">All jackets</a>
+        <a href="../aboutus.html">About us</a>
+        <a href="../contact.html">Contact us</a>
+
+      </div>
+      <div class="footer-three small-footer-one">
+      <p>&copy; copyright 2022 - Rainydays</p>
+    </div>
+    </footer>  
+  </body>
+</html>

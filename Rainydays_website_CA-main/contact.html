@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="The contact page of Rainydays" />
+    <link href="/css/index.css" rel="stylesheet" />
+    <script defer src="js/contact.js"></script>
+
+    <title>Rainydays | Contact</title>
+    <!-- Hotjar Tracking Code for my site -->
+<script>
+  (function(h,o,t,j,a,r){
+      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+      h._hjSettings={hjid:3395081,hjsv:6};
+      a=o.getElementsByTagName('head')[0];
+      r=o.createElement('script');r.async=1;
+      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+      a.appendChild(r);
+  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+  </head>
+  <body>
+    <header class="header-container big-header">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="burger-icon">
+        <img src="../icons/burgermenu.svg" alt="burger-icon" />
+      </label>
+     <a href="../index.html" class="logo cursor-on big-logo small-logo"
+        ><img src="../icons/RainyDays_logo1.png" alt="image of the logo"
+      /></a>
+      <nav class="nav-small">
+        <a href="../men.html">MEN</a>
+        <a href="../women.html">WOMEN</a>
+        <a href="../alljackets.html" >VIEW ALL</a>
+        <a href="../aboutus.html">about us</a>
+        <a href="../contact.html" class="active">contact</a>
+        <a href="../shoppingcart.html" ">
+          <img src="../icons/shopping-bag(1).png" class="shopping-icon" alt="shopping bag icon"></a>
+      </nav>  
+      <div id="mobile-cart-icon" class="cart-icon-none"> 
+        <a href="../shoppingcart.html" ">
+          <img src="../icons/shopping-bag(1).png" class="shopping-icon-mobile" alt="shopping bag icon"></a>
+        </div> 
+    </header>
+    <main>
+
+        <section class="big-contact-content contact-content contact-small">
+          <div class="message-header">
+        <h2>Contact info</h2>
+      </div>
+        <div class="contact-info contact-info-small">
+       <p>Email: rainydays@company.com </p>
+        <p>Phone: +47 999 999 99</p>
+        <h5>Visit our store</h5>
+        <p>Monday-Friday: 10:00am - 7:00pm</p>
+      </div>
+        </section>  
+  <div class="small-map-container big-map-container">
+    <section class="message-header"> 
+  <h2>Find our store</h2>
+  <h5>Rainydays, Olav Tryggvassons gt 50</h5>
+  <p>7011 Trondheim</p>
+  </section>
+  <div class="map small-map">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d578.519194332924!2d10.391099495856944!3d63.43340536307971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466d319b53d109d3%3A0x43390650f0b778ec!2sDampoteket%20Trondheim!5e0!3m2!1sno!2sno!4v1678194890885!5m2!1sno!2sno" width="600" height="400" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+  </div>
+                 <!-- contact form -->     
+                 <div class="contact-container contact-container-small">
+                  <div class="message-header">
+                   <h2>Message us here</h2>
+                  </div>    
+                  <form id="contactForm">
+                    <div>
+                      <label>
+                        <p>First name *</p>
+                        <input name="firstName" id="firstName" class="small-firstname" placeholder="First name" />
+                      </label>
+                      <div class="message-valid" id="firstNameValid"></div>
+                    <div class="form-error" id="firstNameError">
+                      <p>Please enter your first name</p>
+                    </div>
+                  </div>
+
+                  <div>
+                    <label>
+                      <p>Email *</p>
+                      <input name="email" id="email" class="small-email" placeholder="e.g. name@mail.com" />
+                    </label>
+                    <div class="message-valid" id="emailValid"></div>
+                    <div class="form-error" id="emailError">
+                      <p>Please enter a valid email adress</p>
+                    </div>
+                  </div>
+                    
+                    
+                      <div>
+                    <label for="subject" required>Subject</label>
+                    <select name="subject" id="subject">
+                      <option value="select">select</option>
+                      <option value="prices">Prices</option>
+                      <option value="Men's jackets">Men's jackets</option>
+                      <option value="Women's jackets">Women's jackets</option>
+                      <option value="Returns">Returns</option>
+                      <option value="Shipping">Shipping</option>
+                      <option value="other">other</option>
+                    </select>
+                  </div>
+                    <!-- message form -->
+                 
+                    <textarea placeholder="Type a message" id="message" class="message-small">
+                    </textarea>
+                    <div class="message-valid" id="messageValid"></div>
+                    <div class="form-error" id="messageError">
+                      Your message must be a minimum of 10 characters
+                    </div>                
+                    <div class="character-count">Character count: <span>0</span></div>
+
+            <button type="submit">Send</button>
+        
+        
+          </div>
+  </main>
+  <footer class="main-footer small-footer">
+    <div class="footer-one small-footer-one">
+      <h4>Contact us</h4>
+      <p>Olav Tryggvassons gt 50</p>
+      <p>7011 Trondheim</p>        
+      <p>rainydays@company.com </p>
+      <p>+47 999 999 99</p>        
+      <p>Mon-Fri: 10:00am - 7:00pm</p>
+    </div>
+
+    <div class="footer-two small-footer-one">
+      <h4>Rainydays</h4>
+      <a href="../men.html">Men's jackets</a>
+      <a href="../women.html">Women's jackets</a>
+      <a href="../alljackets.html">All jackets</a>
+      <a href="../aboutus.html">About us</a>
+      <a href="../contact.html">Contact us</a>
+
+    </div>
+    <div class="footer-three small-footer-one">
+    <p>&copy; copyright 2022 - Rainydays</p>
+  </div>
+  </footer></body>
+</html>
